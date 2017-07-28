@@ -4,10 +4,6 @@ var score = 0;
 var idx = 0;
 
 window.onload = function() {
-	var deviceWidth = document.documentElement.clientWidth;
-	if(deviceWidth > 750) deviceWidth = 750;
-	document.documentElement.style.fontSize = deviceWidth / 7.5 + 'px';
-
 	// 选项
 	var answer1Bg = document.getElementById("answerBg1");
 	var answer2Bg = document.getElementById("answerBg2");
