@@ -1,0 +1,704 @@
+@charset "UTF-8";
+
+html {
+    font-size: 50px;
+}
+
+@media screen and (min-width: 414px) {
+	font-size: 55.2px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: "Microsoft Yahei";
+    color: #333;
+    overflow-x:hidden;
+    overflow-y:hidden;
+}
+
+body {
+	font-size: 0.3rem;
+}
+
+.page > .bg {
+    position: absolute;
+    width: 7.5rem;
+    height: 100%;
+    z-index: -1;
+    background: url("image/bg.png") no-repeat center center;
+    background-size: 100%;
+}
+
+img {
+	width: 100%;
+}
+
+/* 首页 */
+.cloud {
+	position: absolute;
+	top: 0;
+	z-index: 1;
+	width: 7.5rem;
+    height: 100%;
+    -webkit-animation: zoom 3s alternate linear infinite;
+         -o-animation: zoom 3s alternate linear infinite;
+            animation: zoom 3s alternate linear infinite;
+}
+
+@keyframes zoom {
+	0% {
+        -webkit-transform:scale(1);
+            -ms-transform:scale(1);
+             -o-transform:scale(1);
+				transform:scale(1);
+				opacity: 1;
+	}
+	100% {
+        -webkit-transform:scale(1.2);
+            -ms-transform:scale(1.2);
+             -o-transform:scale(1.2);
+				transform:scale(1.2);
+				opacity: 0.3;
+	}
+}
+
+@-webkit-keyframes zoom {
+	0% {
+        -webkit-transform:scale(1);
+            -ms-transform:scale(1);
+             -o-transform:scale(1);
+				transform:scale(1);
+				opacity: 1;
+	}
+	100% {
+        -webkit-transform:scale(1.2);
+            -ms-transform:scale(1.2);
+             -o-transform:scale(1.2);
+				transform:scale(1.2);
+				opacity: 0.3;
+	}
+}
+
+@-o-keyframes zoom {
+	0% {
+        -webkit-transform:scale(1);
+            -ms-transform:scale(1);
+             -o-transform:scale(1);
+				transform:scale(1);
+				opacity: 1;
+	}
+	100% {
+        -webkit-transform:scale(1.2);
+            -ms-transform:scale(1.2);
+             -o-transform:scale(1.2);
+				transform:scale(1.2);
+				opacity: 0.3;
+	}
+}
+
+.cloud > .cloudLT {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: auto;
+    background: url("image/index/cloudLT.png") no-repeat top left;
+    background-size: 100%;
+    width: 3.13rem;
+    height: 3.12rem;
+}
+
+.cloud > .cloudRT {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: auto;
+    background: url("image/index/cloudRT.png") no-repeat top right;
+    background-size: 100%;
+    width: 2.98rem;
+    height: 3.12rem;
+}
+
+.cloud > .cloudLB {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: url("image/index/cloudLB.png") no-repeat bottom left;
+    background-size: 100%;
+    width: 3.63rem;
+    height: 480rem;
+}
+
+.cloud > .cloudRB {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: url("image/index/cloudRB.png") no-repeat bottom right;
+    background-size: 100%;
+    width: 3.7rem;
+    height: 4.8rem;
+}
+
+#indexOther {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 6.2rem;
+    height: 80%;
+}
+
+#indexOther > .logo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    margin: auto;
+    background: url("image/index/logo.png") no-repeat top center;
+    background-size: 100%;
+    width: 1.84rem;
+    height: 3.09rem;
+    -webkit-animation: shakeLogo 0.6s alternate linear infinite;
+         -o-animation: shakeLogo 0.6s alternate linear infinite;
+            animation: shakeLogo 0.6s alternate linear infinite;
+}
+
+@keyframes shakeLogo {
+    0%{
+        -webkit-transform: rotate(-6deg);
+        -ms--transform: rotate(-6deg);
+        -o-transform: rotate(-6deg);
+        transform: rotate(-6deg);
+    }
+
+    50%{
+        -webkit-transform: rotate(0deg);
+        -ms--transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);   
+    }
+
+    100%{
+        -webkit-transform: rotate(6deg);
+        -ms--transform: rotate(6deg);
+        -o-transform: rotate(6deg);
+        transform: rotate(6deg);   
+    }
+}
+
+@-webkit-keyframes shakeLogo {
+    0%{
+        -webkit-transform: rotate(-6deg);
+        -ms--transform: rotate(-6deg);
+        -o-transform: rotate(-6deg);
+        transform: rotate(-6deg);    }
+
+    50%{
+        -webkit-transform: rotate(6deg);
+        -ms--transform: rotate(6deg);
+        -o-transform: rotate(6deg);
+        transform: rotate(6deg);   
+    }
+
+    100%{
+        -webkit-transform: rotate(6deg);
+        -ms--transform: rotate(6deg);
+        -o-transform: rotate(6deg);
+        transform: rotate(6deg);   
+    }
+}
+
+@-o-keyframes shakeLogo {
+    0%{
+        -webkit-transform: rotate(-6deg);
+        -ms--transform: rotate(-6deg);
+        -o-transform: rotate(-6deg);
+        transform: rotate(-6deg);
+    }
+
+    50%{
+        -webkit-transform: rotate(6deg);
+        -ms--transform: rotate(6deg);
+        -o-transform: rotate(6deg);
+        transform: rotate(6deg);   
+    }
+
+    100%{
+        -webkit-transform: rotate(6deg);
+        -ms--transform: rotate(6deg);
+        -o-transform: rotate(6deg);
+        transform: rotate(6deg);   
+    }
+}
+
+#indexOther > .title {
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    margin: auto;
+    background: url("image/index/title.gif") no-repeat center center;
+    background-size: 100%;
+    width: 6.2rem;
+    height: 2.26rem;
+}
+
+#indexOther > #start {
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    margin: auto;
+    background: url("image/index/start.png") no-repeat top center;
+    background-size: 100%;
+    width: 3.89rem;
+    height: 0.89rem;
+}
+
+/* 答题页 */
+#question {
+	display: none;
+}
+
+#questionOther {
+    position: absolute;
+    top: 0;
+    margin: auto;
+    width: 7.5rem;
+    height: 95%;
+}
+
+#question > #title {
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 6.88rem;
+	height: 3.2rem;
+}
+
+.answerBox {
+	position: absolute;
+	z-index: 1;
+	top: 3.8rem;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 6.13rem;
+	min-height: 7.57rem;
+}
+
+#normalQ > .answerBg {
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 5.25rem;
+	height: 1.01rem;
+	margin: auto;
+    background: url("image/page/answer_bg.png") no-repeat center center;
+    background-size: 100%;
+}
+
+#normalQ > #answerBg1 {
+	top: 1.4rem;
+}
+
+#normalQ > #answerBg2 {
+	top: 2.81rem;
+}	
+
+#normalQ > #answerBg3 {
+	top: 4.22rem;
+}
+
+#normalQ > #answerBg4 {
+	top: 5.63rem;
+}
+
+.normalSelectIcon {
+	position: absolute;
+	left: 0.4rem;
+	top: 0;
+	bottom: 0;
+	width: 0.42rem;
+	height: 0.42rem;
+	margin: auto;
+	background: url("image/page/unselect.png") no-repeat center center;
+	background-size: 100%;
+}
+
+.answer {
+	position: absolute;
+	left: 0.92rem;
+	height: 1.01rem;
+	margin: auto;
+
+	display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-align: center;
+  
+  	display: -o-box;
+    -o-box-orient: horizontal;
+    -o-box-align: center;
+  
+   	display: -ms-box;
+    -ms-box-orient: horizontal;
+    -ms-box-align: center;
+  
+  	display: box;
+  	box-orient: horizontal;
+  	box-align: center;
+}
+
+#logoQ {
+    display: block;
+}
+
+.logoAnswer {
+    position: absolute;
+    width: 2.48rem;
+    height: 2.51rem;
+    margin: auto;
+    background: url("image/page/logo_unselect.png") no-repeat center center;
+    background-size: 100%;
+}
+
+#logoQ > #logoAnswer1, #logoAnswer2 {
+    top: 1.3rem;
+}
+
+#logoQ > #logoAnswer3, #logoAnswer4 {
+    top: 4.1rem;
+}
+
+#logoQ > #logoAnswer1, #logoAnswer3 {
+    left: .5rem;
+}
+
+#logoQ > #logoAnswer2, #logoAnswer4 {
+    right: .5rem;
+}
+
+#logo1, #logo2, #logo3, #logo4 {
+    position: absolute;
+    margin: auto;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+	width: 1.63rem;
+    height: 2.41rem;
+}
+
+#logo3, #logo4 {
+	width: 1.17rem;
+	height: 2.33rem;
+}
+
+#logo1 {
+    background: url("image/page/logo1.png") no-repeat center center;
+    background-size: 100%;
+}
+
+#logo2 {
+    background: url("image/page/logo2.png") no-repeat center center;
+    background-size: 100%;
+}
+
+#logo3 {
+    background: url("image/page/logo3.png") no-repeat center center;
+    background-size: 100%;
+}
+
+#logo4 {
+    background: url("image/page/logo4.png") no-repeat center center;
+    background-size: 100%;
+}
+
+.shake {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 5.25rem;
+    height: 1.01rem;
+    margin: auto;
+    background: url("image/page/answer_bg.png") no-repeat center center;
+    background-size: 100%;
+
+    -webkit-animation:shakeAnswer 0.5s linear;
+         -o-animation:shakeAnswer 0.5s linear;
+            animation:shakeAnswer 0.5s linear;
+}
+
+.logoShake {
+    position: absolute;
+    width: 2.48rem;
+    height: 2.51rem;
+    margin: auto;
+    background: url("image/page/logo_select.png") no-repeat center center;
+    background-size: 100%;
+
+    -webkit-animation:shakeAnswer 0.5s linear;
+         -o-animation:shakeAnswer 0.5s linear;
+            animation:shakeAnswer 0.5s linear;   
+}
+
+@keyframes shakeAnswer {
+    0%{
+        -webkit-transform: rotate(-10deg);
+        -ms--transform: rotate(-10deg);
+        -o-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+
+    50%{
+        -webkit-transform: rotate(10deg);
+        -ms--transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+        transform: rotate(10deg);   
+    }
+}
+
+@-webkit-keyframes shakeAnswer {
+    0%{
+        -webkit-transform: rotate(-10deg);
+        -ms--transform: rotate(-10deg);
+        -o-transform: rotate(-10deg);
+        transform: rotate(-10deg);    }
+
+    50%{
+        -webkit-transform: rotate(10deg);
+        -ms--transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+        transform: rotate(10deg);   
+    }
+}
+
+@-o-keyframes shakeAnswer {
+    0%{
+        -webkit-transform: rotate(-10deg);
+        -ms--transform: rotate(-10deg);
+        -o-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+
+    50%{
+        -webkit-transform: rotate(10deg);
+        -ms--transform: rotate(10deg);
+        -o-transform: rotate(10deg);
+        transform: rotate(10deg);   
+    }
+}
+
+#questionOther > #next {
+	position: absolute;
+	left: 0;
+	right: 0;
+    bottom: 0;
+	width: 3.13rem;
+	height: 0.89rem;
+	margin: auto;
+	background: url("image/page/next.png") no-repeat center center;
+	background-size: 100%;
+}
+
+/* 错误提示 */
+#errorTips {
+	display: none;
+}
+
+#cover {
+	position: absolute;
+	top: 0;
+	width: 7.5rem;
+    height: 100%;
+    z-index: 3;
+    background: url("image/page/cover.png") no-repeat center center;
+    background-size: 100%;
+}
+
+#errorOther {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 6.09rem;
+    height: 65%;
+}
+
+#errorOther > #error {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background: url("image/page/error.png") no-repeat center center;
+	background-size: 100%;
+	width: 6.09rem;
+	height: 7.05rem;
+}
+
+#tips {
+	position: absolute;
+	width: 4.872rem;
+	height: 4.371rem;
+	left: 0;
+	right: 0;
+	bottom: 0.1rem;
+	margin: auto;
+}
+
+#errorOther > #errorNext {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	background: url("image/page/error_next.png") no-repeat center center;
+	background-size: 100%;
+	width: 3.19rem;
+	height: 0.89rem;
+}
+
+/* 结果 */
+#result {
+    display: none;
+}
+
+#lamp {
+    position: absolute;
+    top: -4.8475rem;
+    left: -5.9rem;
+    width: 19.3rem;
+    height: 19.39rem;
+    margin: auto;
+    background: url("image/result/cover2.png") no-repeat center center;
+    background-size: 100%;
+    -webkit-animation:lampRotate 15s linear infinite;
+         -o-animation:lampRotate 15s linear infinite;
+            animation:lampRotate 15s linear infinite;
+}
+
+@keyframes lampRotate {
+    0%{
+        -webkit-transform: rotate(0deg);
+        -ms--transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100%{
+        -webkit-transform: rotate(360deg);
+        -ms--transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);   
+    }
+}
+
+@-webkit-keyframes lampRotate {
+    0%{
+        -webkit-transform: rotate(0deg);
+        -ms--transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);    }
+
+    100%{
+        -webkit-transform: rotate(360deg);
+        -ms--transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);   
+    }
+}
+
+@-o-keyframes lampRotate {
+    0%{
+        -webkit-transform: rotate(0deg);
+        -ms--transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100%{
+        -webkit-transform: rotate(360deg);
+        -ms--transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);   
+    }
+}
+
+#resultBg {
+    position: absolute;
+    width: 5.04rem;
+    height: 5.9rem;
+    top: 3rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("image/result/title/1.png") no-repeat center center;
+    background-size: 100%;
+}
+
+#resultTitle {
+    position: absolute;
+    width: 4.032rem;
+    height: 4.13rem;
+    left: 0;
+    right: 0;
+    bottom: 0.1rem;
+    margin: auto;
+    color: #000;
+    font-size: .35rem;
+}
+
+#returnIndex {
+    position: absolute;
+    left: .5rem;
+    bottom: 2.5rem;
+    width: 2.89rem;
+    height: 0.89rem;
+    margin: auto;
+    background: url("image/result/return.png") no-repeat center center;
+    background-size: 100%;
+}
+
+#share {
+    position: absolute;
+    right: .5rem;
+    bottom: 2.5rem;
+    width: 2.89rem;
+    height: 0.89rem;
+    margin: auto;
+    background: url("image/result/share.png") no-repeat center center;
+    background-size: 100%;
+}
+
+#shareGuide {
+    display: none;
+    position: absolute;
+    z-index: 3;
+    width: 7.5rem;
+    height: 100%;
+}
+
+#guide {
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("image/result/guide.png") no-repeat center center;
+    background-size: 100%;
+    width: 5.3rem;
+    height: 4.28rem;
+}
